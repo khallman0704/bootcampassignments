@@ -1,0 +1,1715 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1018.1932                               -->
+<workbook original-version='18.1' source-build='2018.3.0 (20183.18.1018.1932)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='titanic3 (titanic3) (3)' inline='true' name='federated.05bpa7v0ptl2el18hgo820objupu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='titanic3' name='excel-direct.14asko11nz0nll1flnma20t4q4tr'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Kimsstuff/kims classes/bootcamp/excelfiles/titanic3.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.14asko11nz0nll1flnma20t4q4tr' name='titanic3' table='[titanic3$]' type='table'>
+          <columns gridOrigin='A1:N1310:no:A1:N1310:0' header='yes' outcome='2'>
+            <column datatype='integer' name='pclass' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='real' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='string' name='ticket' ordinal='7' />
+            <column datatype='real' name='fare' ordinal='8' />
+            <column datatype='string' name='cabin' ordinal='9' />
+            <column datatype='string' name='embarked' ordinal='10' />
+            <column datatype='string' name='boat' ordinal='11' />
+            <column datatype='string' name='body' ordinal='12' />
+            <column datatype='string' name='home.dest' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pclass]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>pclass</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[survived]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sibsp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sibsp]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sibsp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parch]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>parch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ticket</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ticket]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>ticket</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>fare</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cabin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cabin]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>cabin</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embarked</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[embarked]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>embarked</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>boat</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[boat]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>boat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home.dest</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[home.dest]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>home.dest</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N1310:no:A1:N1310:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Boat' datatype='string' name='[boat]' role='dimension' type='nominal' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Cabin' datatype='string' name='[cabin]' role='dimension' type='nominal' />
+      <column caption='Embarked' datatype='string' name='[embarked]' role='dimension' type='nominal' />
+      <column caption='Fare' datatype='real' name='[fare]' role='measure' type='quantitative' />
+      <column caption='Home.Dest' datatype='string' name='[home.dest]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Parch' datatype='integer' name='[parch]' role='measure' type='quantitative' />
+      <column caption='Pclass' datatype='integer' name='[pclass]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+      <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+      <column caption='Ticket' datatype='string' name='[ticket]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.521538' measure-ordering='alphabetic' measure-percentage='0.478462' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='titanic3 (titanic3) (4)' inline='true' name='federated.1wa4okr1ohxxc41bl329n0p2umvy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='titanic3' name='excel-direct.0ym4fu00gj8j6a16uh4980yb1tom'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Kimsstuff/kims classes/bootcamp/excelfiles/titanic3.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0ym4fu00gj8j6a16uh4980yb1tom' name='titanic3' table='[titanic3$]' type='table'>
+          <columns gridOrigin='A1:N1310:no:A1:N1310:0' header='yes' outcome='2'>
+            <column datatype='integer' name='pclass' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='real' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='string' name='ticket' ordinal='7' />
+            <column datatype='real' name='fare' ordinal='8' />
+            <column datatype='string' name='cabin' ordinal='9' />
+            <column datatype='string' name='embarked' ordinal='10' />
+            <column datatype='string' name='boat' ordinal='11' />
+            <column datatype='string' name='body' ordinal='12' />
+            <column datatype='string' name='home.dest' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pclass]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>pclass</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[survived]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sibsp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sibsp]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sibsp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parch]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>parch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ticket</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ticket]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>ticket</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>fare</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cabin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cabin]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>cabin</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embarked</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[embarked]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>embarked</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>boat</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[boat]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>boat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home.dest</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[home.dest]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>home.dest</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N1310:no:A1:N1310:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Boat' datatype='string' name='[boat]' role='dimension' type='nominal' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Cabin' datatype='string' name='[cabin]' role='dimension' type='nominal' />
+      <column caption='Embarked' datatype='string' name='[embarked]' role='dimension' type='nominal' />
+      <column caption='Fare' datatype='real' name='[fare]' role='measure' type='quantitative' />
+      <column caption='Home.Dest' datatype='string' name='[home.dest]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Parch' datatype='integer' name='[parch]' role='measure' type='quantitative' />
+      <column caption='Pclass' datatype='integer' name='[pclass]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+      <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+      <column caption='Ticket' datatype='string' name='[ticket]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52' measure-ordering='alphabetic' measure-percentage='0.48' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='titanic3 (titanic3) (2)' inline='true' name='federated.03yb1jq0s01wir129vowd1mhoqqc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='titanic3' name='excel-direct.1fdx9ey14k1iuc0zqwyx81rxa1ph'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Kimsstuff/kims classes/bootcamp/excelfiles/titanic3.xls' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fdx9ey14k1iuc0zqwyx81rxa1ph' name='titanic3' table='[titanic3$]' type='table'>
+          <columns gridOrigin='A1:N1310:no:A1:N1310:1' header='yes' lost='0' outcome='1' processed='9106'>
+            <column datatype='integer' name='pclass' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='real' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='string' name='ticket' ordinal='7' />
+            <column datatype='real' name='fare' ordinal='8' />
+            <column datatype='string' name='cabin' ordinal='9' />
+            <column datatype='string' name='embarked' ordinal='10' />
+            <column datatype='string' name='boat' ordinal='11' />
+            <column datatype='integer' name='body' ordinal='12' />
+            <column datatype='string' name='home.dest' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pclass]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>pclass</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[survived]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sibsp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sibsp]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sibsp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parch]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>parch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ticket</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ticket]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>ticket</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>fare</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cabin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cabin]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>cabin</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embarked</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[embarked]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>embarked</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>boat</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[boat]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>boat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home.dest</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[home.dest]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>home.dest</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N1310:no:A1:N1310:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>9106</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Boat' datatype='string' name='[boat]' role='dimension' type='nominal' />
+      <column caption='Body' datatype='integer' name='[body]' role='dimension' type='ordinal' />
+      <column caption='Cabin' datatype='string' name='[cabin]' role='dimension' type='nominal' />
+      <column caption='Embarked' datatype='string' name='[embarked]' role='dimension' type='nominal' />
+      <column caption='Fare' datatype='real' name='[fare]' role='measure' type='quantitative' />
+      <column caption='Home.Dest' datatype='string' name='[home.dest]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Parch' datatype='integer' name='[parch]' role='measure' type='quantitative' />
+      <column caption='Pclass' datatype='integer' name='[pclass]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+      <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+      <column caption='Ticket' datatype='string' name='[ticket]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.521538' measure-ordering='alphabetic' measure-percentage='0.478462' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='titanic3 (titanic3)' inline='true' name='federated.1h05riu1ox9x7s1cl7ci80omi3pp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='titanic3' name='excel-direct.1u4wyas1w1pdg8191btou0mc9mpf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Kimsstuff/kims classes/bootcamp/excelfiles/titanic3.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1u4wyas1w1pdg8191btou0mc9mpf' name='titanic3' table='[titanic3$]' type='table'>
+          <columns gridOrigin='A1:N1310:no:A1:N1310:0' header='yes' outcome='2'>
+            <column datatype='integer' name='pclass' ordinal='0' />
+            <column datatype='integer' name='survived' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='sex' ordinal='3' />
+            <column datatype='real' name='age' ordinal='4' />
+            <column datatype='integer' name='sibsp' ordinal='5' />
+            <column datatype='integer' name='parch' ordinal='6' />
+            <column datatype='string' name='ticket' ordinal='7' />
+            <column datatype='real' name='fare' ordinal='8' />
+            <column datatype='string' name='cabin' ordinal='9' />
+            <column datatype='string' name='embarked' ordinal='10' />
+            <column datatype='string' name='boat' ordinal='11' />
+            <column datatype='string' name='body' ordinal='12' />
+            <column datatype='string' name='home.dest' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>pclass</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[pclass]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>pclass</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>survived</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[survived]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>survived</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sex]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sex</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sibsp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sibsp]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>sibsp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parch]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>parch</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ticket</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ticket]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>ticket</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>fare</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cabin</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cabin]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>cabin</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>embarked</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[embarked]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>embarked</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>boat</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[boat]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>boat</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>body</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home.dest</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[home.dest]</local-name>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias>home.dest</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[titanic3]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N1310:no:A1:N1310:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Calculation3' datatype='integer' name='[Calculation_1206401808268431369]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[survived]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+      <column caption='Boat' datatype='string' name='[boat]' role='dimension' type='nominal' />
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal' />
+      <column caption='Cabin' datatype='string' name='[cabin]' role='dimension' type='nominal' />
+      <column caption='Embarked' datatype='string' name='[embarked]' role='dimension' type='nominal' />
+      <column caption='Fare' datatype='real' name='[fare]' role='measure' type='quantitative' />
+      <column caption='Home.Dest' datatype='string' name='[home.dest]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Parch' datatype='integer' name='[parch]' role='measure' type='quantitative' />
+      <column caption='Pclass' datatype='integer' name='[pclass]' role='measure' type='quantitative' />
+      <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+      <column caption='Sibsp' datatype='integer' name='[sibsp]' role='measure' type='quantitative' />
+      <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+      <column caption='Ticket' datatype='string' name='[ticket]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1206401808268431369]' derivation='Count' name='[cnt:Calculation_1206401808268431369:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[survived]' derivation='Count' name='[cnt:survived:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+      <column-instance column='[Calculation_1206401808268431369]' derivation='Sum' name='[sum:Calculation_1206401808268431369:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[age]' derivation='Sum' name='[sum:age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[age]' derivation='Sum' name='[sum:age:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+      <column-instance column='[survived]' derivation='Sum' name='[sum:survived:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[survived]' derivation='Sum' name='[sum:survived:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.52' measure-ordering='alphabetic' measure-percentage='0.48' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:age:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:age:vtsum:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:survived:vtsum:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:Calculation_1206401808268431369:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:Calculation_1206401808268431369:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:survived:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:survived:vtsum:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[usr:Calculation_1206401808265416710:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1h05riu1ox9x7s1cl7ci80omi3pp]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Titanic survivors </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='titanic3 (titanic3)' name='federated.1h05riu1ox9x7s1cl7ci80omi3pp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1h05riu1ox9x7s1cl7ci80omi3pp'>
+            <column caption='Calculation3' datatype='integer' name='[Calculation_1206401808268431369]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[survived]' />
+            </column>
+            <column caption='Age' datatype='real' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Attribute' name='[attr:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[survived]' derivation='Attribute' name='[attr:survived:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1206401808268431369]' derivation='Count' name='[cnt:Calculation_1206401808268431369:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[survived]' derivation='Count' name='[cnt:survived:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sex]' derivation='None' name='[none:sex:nk]' pivot='key' type='nominal' />
+            <column caption='Sex' datatype='string' name='[sex]' role='dimension' type='nominal' />
+            <column-instance column='[age]' derivation='Sum' name='[sum:age:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+            <column caption='Survived' datatype='integer' name='[survived]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[attr:age:qk]' included-values='in-range'>
+            <min>18.0</min>
+            <max>100.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[attr:survived:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>1</max>
+          </filter>
+          <filter class='categorical' column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:name:nk]'>
+            <groupfilter function='level-members' level='[none:name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:sex:nk]'>
+            <groupfilter function='member' level='[none:sex:nk]' member='&quot;female&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:sex:nk]</column>
+            <column>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:name:nk]</column>
+            <column>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[attr:survived:qk]</column>
+            <column>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[attr:age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:Calculation_1206401808268431369:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1.0' minor-origin='0' minor-show='false' minor-spacing='1.0' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:Calculation_1206401808268431369:qk]' scope='cols' value='Survived' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' data-class='total' field='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:Calculation_1206401808268431369:qk]' value='N' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:survived:vtsum:qk]' value='N' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:survived:vtsum:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='323' />
+                <format attr='maxwidth' value='323' />
+                <format attr='minheight' value='6900' />
+                <format attr='maxheight' value='6900' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:Calculation_1206401808268431369:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:survived:vtsum:qk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:age:vtsum:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:survived:vtsum:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:name:nk] / [federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:sex:nk])</rows>
+        <cols>([federated.1h05riu1ox9x7s1cl7ci80omi3pp].[cnt:Calculation_1206401808268431369:qk] + [federated.1h05riu1ox9x7s1cl7ci80omi3pp].[sum:age:vtsum:qk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[attr:survived:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:sex:nk]' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[:Measure Names]</field>
+            <field>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:name:nk]</field>
+            <field>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:sex:nk]</field>
+            <field>[federated.1h05riu1ox9x7s1cl7ci80omi3pp].[none:survived:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CD54691-532F-402E-9AC2-FEE3D212468C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
